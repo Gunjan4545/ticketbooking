@@ -70,7 +70,7 @@ function Slider() {
 
   const handleGetRequest = async () => {
     try {
-      let res = await axios.post("https://blue-bus.onrender.com/city", {
+      let res = await axios.post("http://localhost:8080/city", {
         source,
       });
       res = res.data;
